@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .projectsSection {
@@ -9,7 +10,6 @@
     width: 100vw;
     height: auto;
     min-height: 100vh;
-    padding-bottom: 8rem;
     overflow: hidden;
 }
 
@@ -25,7 +25,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
     margin: 0 auto;
     transform: translateY(80px);
     padding: 0;
@@ -33,11 +32,29 @@
     height: auto;
 }
 
+.otherProjectsButton {
+    margin-top: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+.otherProjectsButton:hover {
+    background-color: rgb(157, 255, 255);
+    transition: all 0.3s linear;
+}
+.projectsDiv {
+    flex-direction: column;
+}
 .projectsCell {
     flex: 0 1 250px;
     max-width: 250px;
     height: 300px;
-    margin: 2px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     position: relative;
     text-align: center;
     z-index: 1;
@@ -63,7 +80,6 @@
     font-weight: 700;
     font-size: 1rem;
     transition: opacity 350ms;
-    text-shadow: 2px 2px 2px darkgrey;
 }
 
 .projectsCell::before, .projectsCell::after, .projectsCellImage {
