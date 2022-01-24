@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.welcome-section {
+    width: 100vw;
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(./images/reception.jpg) no-repeat center / cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+}
+
+@media only screen and (max-width: 1100px) {
+    .welcome-section h1 {
+        font-size: 1.6em;
+    }
+}
+
+
+.question-h2{
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+.question-p {
+    margin-bottom: 1.25rem;
+    color: black;
+    font-weight: bold;
+}
+    
+@media screen and (min-width: 800px) {
+    .question-h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+}
+.title h2 {
+    color: black;
+    text-align: center;
+}
+.section-center {
+    max-width: 620px;
+}
+.question {
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+}
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+.question-title p {
+    margin-bottom: 0;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+.question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s linear;
+}
+.question-text {
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.question-text p {
+    margin-bottom: 0;
+}
+    /* hide text */
+.question-text {
+        display: none;
+}
+.show-text .question-text {
+    display: block;
+}
+.minus-icon {
+    display: none;
+}
+.show-text .minus-icon {
+    display: inline;
+}
+.show-text .plus-icon {
+    display: none;
+}
